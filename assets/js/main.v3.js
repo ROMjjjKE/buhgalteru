@@ -27,26 +27,7 @@
     if(a.hasAttribute('aria-current')){try{a.scrollIntoView({block:'nearest',inline:'center'});}catch(e){}}
   });
 
-  /* Появление блоков: включается только если всё работает, иначе контент остаётся видимым */
-  var rv=document.querySelectorAll('.rv');
-  if(rv.length){
-    var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if('IntersectionObserver' in window && !reduce){
-      document.documentElement.classList.add('js');
-      var showAll=function(){rv.forEach(function(el){el.classList.add('rv-in');});};
-      var io=new IntersectionObserver(function(es){
-        es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('rv-in');io.unobserve(e.target);}});
-      },{rootMargin:'0px 0px -6% 0px',threshold:.05});
-      rv.forEach(function(el){
-        if(el.getBoundingClientRect().top<window.innerHeight)el.classList.add('rv-in');
-        else io.observe(el);
-      });
-      setTimeout(showAll,2200);
-      window.addEventListener('load',function(){setTimeout(showAll,300);});
-    } else {
-      rv.forEach(function(el){el.classList.add('rv-in');});
-    }
-  }
+  /* Контент не скрывается: появление блоков реализовано в CSS без вероятности «белых полос» */
 
   var calc=document.getElementById('calc');
   if(calc){
