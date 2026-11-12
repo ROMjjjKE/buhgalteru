@@ -1,7 +1,6 @@
 
 (function(){
   'use strict';
-  document.documentElement.classList.add('js');
 
   var burger=document.getElementById('burger'), drawer=document.getElementById('drawer'), closeBtn=document.getElementById('drawerClose');
   function lock(on){document.body.classList.toggle('is-locked',on);}
@@ -28,20 +27,27 @@
     if(a.hasAttribute('aria-current')){try{a.scrollIntoView({block:'nearest',inline:'center'});}catch(e){}}
   });
 
-  /* появление блоков */
+  /* Появление блоков: включается только если всё работает, иначе контент остаётся видимым */
   var rv=document.querySelectorAll('.rv');
   if(rv.length){
-    if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if('IntersectionObserver' in window && !reduce){
+      document.documentElement.classList.add('js');
+      var showAll=function(){rv.forEach(function(el){el.classList.add('rv-in');});};
       var io=new IntersectionObserver(function(es){
         es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('rv-in');io.unobserve(e.target);}});
-      },{rootMargin:'0px 0px -8% 0px',threshold:.06});
-      rv.forEach(function(el){io.observe(el);});
+      },{rootMargin:'0px 0px -6% 0px',threshold:.05});
+      rv.forEach(function(el){
+        if(el.getBoundingClientRect().top<window.innerHeight)el.classList.add('rv-in');
+        else io.observe(el);
+      });
+      setTimeout(showAll,2200);
+      window.addEventListener('load',function(){setTimeout(showAll,300);});
     } else {
       rv.forEach(function(el){el.classList.add('rv-in');});
     }
   }
 
-  /* калькулятор нормо-часов */
   var calc=document.getElementById('calc');
   if(calc){
     var range=document.getElementById('calc-range'),
@@ -66,7 +72,6 @@
     paint();
   }
 
-  /* самопроверка учёта */
   var chk=document.getElementById('chk');
   if(chk){
     var boxes=chk.querySelectorAll('input[type=checkbox]'),
@@ -88,7 +93,6 @@
     paintChk();
   }
 
-  /* аккордеон */
   document.querySelectorAll('.faq__q').forEach(function(q){
     q.addEventListener('click',function(){
       var item=q.closest('.faq__i'),open=item.classList.contains('is-open'),grp=item.parentNode;
@@ -100,7 +104,6 @@
     });
   });
 
-  /* форма заявки */
   var form=document.getElementById('leadForm');
   if(form){
     form.addEventListener('submit',function(e){
