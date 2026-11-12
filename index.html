@@ -1,241 +1,340 @@
-<!doctype html><html lang="ru"><head>
+<!doctype html><html lang="ru" class="js"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Бухгалтерские услуги в Минске — ООО «Бухгалтерский успех»</title><meta name="description" content="Бухгалтерский аутсорсинг в Минске: ведение учёта от 80 BYN в месяц, отчётность, зарплата, восстановление учёта, консультации. Страхование ответственности 100 000 BYN. ул. Притыцкого, 83.">
 <meta property="og:title" content="Бухгалтерские услуги в Минске — ООО «Бухгалтерский успех»"><meta property="og:description" content="Бухгалтерский аутсорсинг в Минске: ведение учёта от 80 BYN в месяц, отчётность, зарплата, восстановление учёта, консультации. Страхование ответственности 100 000 BYN. ул. Притыцкого, 83.">
 <meta property="og:type" content="website"><meta property="og:locale" content="ru_BY">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&family=Golos+Text:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400;1,7..72,500&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{--paper:#FBFAF7;--paper2:#F3F1EA;--ink:#101113;--ink2:#4C4F55;--ink3:#83878E;
---line:rgba(16,17,19,.16);--line2:rgba(16,17,19,.09);--deep:#0F1A15;--green:#0C5B3C;--green2:#0A4A31;
---f-d:'Manrope',system-ui,sans-serif;--f-t:'Golos Text',system-ui,sans-serif;--f-m:'IBM Plex Mono',monospace}
+:root{
+--paper:#F2EEE4;--paper2:#E8E2D3;--ink:#14120D;--ink2:#4B463A;--muted:#6E6759;
+--line:rgba(20,18,13,.17);--line2:rgba(20,18,13,.09);
+--deep:#12110C;--accent:#A6471F;--accent2:#E8834A;
+--f-d:'Literata',Georgia,serif;--f-t:'Golos Text',system-ui,sans-serif;--f-m:'JetBrains Mono',monospace}
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;font-size:19px}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-t);font-size:19px;line-height:1.58;
+html{-webkit-text-size-adjust:100%;font-size:19px;overflow-x:clip}
+html.js .rv{opacity:0;transform:translateY(20px)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-t);font-size:19px;line-height:1.62;
 -webkit-font-smoothing:antialiased;overflow-x:hidden}
 body.is-locked{overflow:hidden}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
-h1,h2,h3{font-family:var(--f-d);font-weight:800;letter-spacing:-.025em;line-height:1.02;margin:0;text-transform:uppercase;overflow-wrap:break-word;hyphens:auto}
-.grid>*,.head>*,.frame>*,.cta>*{min-width:0}
-p{margin:0 0 1em}
-.wrap{width:min(1260px,100% - 40px);margin-inline:auto}
-.mono{font-family:var(--f-m);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink3)}
-.top{position:sticky;top:0;z-index:60;background:rgba(251,250,247,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.top__row{display:flex;align-items:center;gap:12px;min-height:74px;min-width:0}
-.brand{display:flex;flex-direction:column;gap:3px;min-width:0;overflow:hidden;white-space:nowrap}
-.brand b{font-family:var(--f-d);font-weight:800;font-size:1.02rem;letter-spacing:-.02em;text-transform:uppercase}
-.brand span{font-family:var(--f-m);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3)}
-.top__sp{flex:1;min-width:8px}
-@media (max-width:700px){.brand span{display:none}}
-.telbox{display:flex;flex-direction:column;gap:1px;text-align:right}
-.telbox a{font-family:var(--f-m);font-size:.82rem;font-weight:500}
-.telbox a:hover{color:var(--green)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:52px;padding:0 26px;
-background:var(--green);color:#fff;font-family:var(--f-d);font-weight:800;font-size:.88rem;letter-spacing:.01em;
-text-transform:uppercase;border:1px solid var(--green);transition:background .18s,color .18s}
-.btn:hover{background:var(--green2)}
-.btn--dark{background:var(--ink);border-color:var(--ink)}
+p{margin:0}
+.wrap{width:min(1340px,100% - 44px);margin-inline:auto}
+.mono,.kick{font-family:var(--f-m);font-size:11px;letter-spacing:.19em;text-transform:uppercase;color:var(--muted)}
+.kick{display:inline-flex;align-items:center;gap:10px}
+.kick::before{content:"";width:7px;height:7px;background:var(--accent);flex:none}
+h1,h2,h3{font-family:var(--f-d);font-weight:500;margin:0;letter-spacing:-.025em;line-height:1.02;overflow-wrap:break-word}
+h1{font-size:clamp(2.6rem,7vw,6.4rem);line-height:.95}
+h2{font-size:clamp(2rem,4.6vw,3.9rem);line-height:1.0}
+h3{font-size:clamp(1.12rem,1.7vw,1.45rem);line-height:1.22;font-weight:600}
+em{font-style:italic;color:var(--accent)}
+.topbar{background:var(--deep);color:rgba(242,238,228,.62);font-family:var(--f-m);font-size:10px;letter-spacing:.16em;text-transform:uppercase}
+.topbar__in{display:flex;align-items:center;gap:22px;min-height:38px;min-width:0}
+.topbar a{color:rgba(242,238,228,.86)}
+.topbar a:hover{color:#fff}
+.topbar__sp{flex:1}
+@media (max-width:900px){.topbar{display:none}}
+.hdr{position:sticky;top:0;z-index:60;background:var(--paper);border-bottom:1px solid var(--line)}
+.hdr__in{display:flex;align-items:center;gap:16px;min-height:96px;min-width:0}
+.logo{display:flex;flex-direction:column;gap:2px;min-width:0;flex:0 1 auto;overflow:hidden}
+.logo b{font-family:var(--f-d);font-weight:600;font-size:1.24rem;line-height:1;letter-spacing:-.03em;white-space:nowrap}
+.logo span{font-family:var(--f-m);font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.hdr__sp{flex:1;min-width:6px}
+.hdr__act{display:flex;align-items:center;gap:14px;flex:none}
+.hdr__tel{font-family:var(--f-m);font-size:13px;letter-spacing:.02em;white-space:nowrap}
+.hdr__tel:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 24px;
+background:var(--ink);color:#F5F2E9;font-family:var(--f-m);font-size:11px;letter-spacing:.15em;text-transform:uppercase;
+border:1px solid var(--ink);transition:background .22s,color .22s,border-color .22s;cursor:pointer}
+.btn:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn--acc{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn--acc:hover{background:var(--ink);border-color:var(--ink)}
 .btn--line{background:transparent;color:var(--ink);border-color:var(--ink)}
-.btn--line:hover{background:var(--ink);color:#fff}
+.btn--line:hover{background:var(--ink);color:#F5F2E9}
+.btn svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.6;flex:none}
 .burger{display:none;flex-direction:column;justify-content:center;gap:5px;width:46px;height:46px;border:1px solid var(--line);
-background:transparent;padding:0 12px;cursor:pointer;flex:none;margin-left:auto}
-.burger span{display:block;height:2px;background:var(--ink)}
-@media (max-width:1099px){.telbox{display:none}.burger{display:flex}.top .btn{display:none}}
-.navbar{border-top:1px solid var(--line2)}
-.navbar__in{display:flex;align-items:center;gap:0;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}
-.navbar__in::-webkit-scrollbar{display:none;height:0}
-.navbar a{flex:none;font-family:var(--f-m);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;
-padding:15px 14px;white-space:nowrap;border-bottom:2px solid transparent;color:var(--ink2)}
-.navbar a:hover{color:var(--ink);border-color:var(--green)}
-.navbar a[aria-current="page"]{color:var(--green);border-color:var(--green)}
-.hero{position:relative;min-height:clamp(560px,78vh,820px);display:flex;align-items:flex-end;overflow:hidden;background:var(--deep);color:#fff}
+background:transparent;padding:0 12px;cursor:pointer;flex:none}
+.burger span{display:block;height:1.5px;background:var(--ink)}
+@media (max-width:1180px){.hdr__tel{display:none}.hdr__act .btn{display:none}.burger{display:flex}}
+@media (max-width:560px){.logo b{font-size:.95rem;white-space:normal;line-height:1.12}.logo span{display:none}
+.hdr__in{min-height:78px;gap:10px}.ribbon i{font-size:1.05rem}}
+.strip{border-top:1px solid var(--line2);overflow:hidden}
+.strip__in{display:flex;align-items:stretch;overflow-x:auto;scrollbar-width:none;min-width:0}
+.strip__in::-webkit-scrollbar{display:none;height:0}
+.strip a{flex:none;font-family:var(--f-m);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink2);
+padding:14px 16px;white-space:nowrap;position:relative}
+.strip a::after{content:"";position:absolute;left:16px;right:16px;bottom:9px;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.strip a:hover{color:var(--ink)}
+.strip a:hover::after,.strip a[aria-current]::after{transform:scaleX(1)}
+.strip a[aria-current]{color:var(--accent)}
+.hero{position:relative;min-height:clamp(620px,88vh,900px);display:flex;align-items:flex-end;overflow:hidden;background:var(--deep);color:#F5F2E9}
 .hero__bg{position:absolute;inset:0}
-.hero__bg img{width:100%;height:100%;object-fit:cover}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(97deg,rgba(10,16,13,.93) 0%,rgba(10,16,13,.72) 48%,rgba(10,16,13,.14) 100%),linear-gradient(0deg,rgba(10,16,13,.7),rgba(10,16,13,0) 42%)}
-.hero__in{position:relative;z-index:2;width:100%;padding-block:clamp(30px,5vw,64px)}
-.hero h1{font-size:clamp(2.35rem,6vw,5.2rem);max-width:16ch}
-.hero h1 i{font-style:normal;color:#8FD5AE}
-.hero p{color:rgba(255,255,255,.86);max-width:46ch;margin-top:18px;font-size:1.02rem}
-.hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
-.hero .btn--line{color:#fff;border-color:rgba(255,255,255,.5)}
-.hero .btn--line:hover{background:#fff;color:var(--ink)}
-.hero__facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.24)}
-.hero__facts div{font-family:var(--f-m);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.78)}
-.hero__facts b{display:block;font-family:var(--f-d);font-size:1.5rem;letter-spacing:-.02em;color:#fff;margin-bottom:2px}
-.fbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:70;gap:4px;padding:7px 8px;
-background:rgba(15,26,21,.97);backdrop-filter:blur(10px)}
-.fbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:11px 4px;color:#fff;
-font-family:var(--f-m);font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;border:1px solid rgba(255,255,255,.16)}
-.fbar a:first-child{background:var(--green);border-color:var(--green)}
-.fbar svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.8}
-@media (max-width:1099px){.fbar{display:flex}body{padding-bottom:60px}}
+.hero__bg img{width:100%;height:100%;object-fit:cover;filter:saturate(.9) contrast(1.02)}
+.hero::after{content:"";position:absolute;inset:0;background:
+linear-gradient(94deg,rgba(12,11,7,.93) 0%,rgba(12,11,7,.78) 42%,rgba(12,11,7,.12) 100%),
+linear-gradient(0deg,rgba(12,11,7,.82),rgba(12,11,7,0) 46%)}
+.hero__in{position:relative;z-index:2;width:100%;padding-block:clamp(40px,6vw,80px)}
+.hero .kick{color:rgba(242,238,228,.72)}
+.hero .kick::before{background:var(--accent2)}
+.hero h1{max-width:15ch;margin-top:18px;color:#F7F4EC}
+.hero h1 em{color:var(--accent2)}
+.hero__lead{margin-top:20px;max-width:47ch;color:rgba(242,238,228,.82);font-size:1.06rem;line-height:1.55}
+.hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero .btn{background:var(--accent);border-color:var(--accent);color:#fff}
+.hero .btn:hover{background:#F5F2E9;border-color:#F5F2E9;color:var(--ink)}
+.hero .btn--line{background:transparent;border-color:rgba(245,242,233,.45);color:#F5F2E9}
+.hero .btn--line:hover{background:#F5F2E9;color:var(--ink);border-color:#F5F2E9}
+.hero__figs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:clamp(34px,5vw,58px);
+border-top:1px solid rgba(245,242,233,.26)}
+.hero__figs div{padding:18px 18px 0 0;border-right:1px solid rgba(245,242,233,.14);min-width:0}
+.hero__figs div:last-child{border-right:0}
+.hero__figs b{display:block;font-family:var(--f-d);font-weight:500;font-size:clamp(1.35rem,2.4vw,2.1rem);
+letter-spacing:-.02em;line-height:1;color:#F7F4EC;margin-bottom:6px}
+.hero__figs span{font-family:var(--f-m);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:rgba(242,238,228,.66)}
+@media (max-width:820px){.hero__figs{grid-template-columns:repeat(2,minmax(0,1fr))}
+.hero__figs div{padding:14px 12px 12px 0}.hero__figs div:nth-child(2n){border-right:0}
+.hero__figs div:nth-child(n+3){border-top:1px solid rgba(245,242,233,.14)}}
+.fbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:70;gap:3px;padding:6px 7px;
+background:rgba(18,17,12,.97);backdrop-filter:blur(10px)}
+.fbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:11px 3px;color:#F5F2E9;
+font-family:var(--f-m);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;border:1px solid rgba(245,242,233,.18)}
+.fbar a:first-child{background:var(--accent);border-color:var(--accent)}
+.fbar svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.7}
+@media (max-width:1180px){.fbar{display:flex}body{padding-bottom:58px}}
 </style>
-<link rel="stylesheet" href="assets/css/site.v1.css">
+<link rel="stylesheet" href="assets/css/site.v2.css">
 </head><body>
-<header class="top">
-  <div class="wrap top__row">
-    <a class="brand" href="index.html"><b>Бухгалтерский успех</b><span>бухгалтерские услуги · Минск</span></a>
-    <span class="top__sp"></span>
-    <div class="telbox"><a href="tel:+375173376031">+375 (17) 337 60 31</a><a href="tel:+375293859484">+375 (29) 385 94 84</a></div>
-    <a class="btn btn--dark" href="kontakty.html#zayavka">Заказать звонок</a>
-    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+<div class="topbar"><div class="wrap topbar__in">
+  <span>Минск, 220140, Беларусь</span><span>ул. Притыцкого, 83, пом. 33н, каб. 2</span><span class="topbar__sp"></span>
+  <span>Пн–Пт · приём по записи</span><a href="tel:+375173376031">+375 (17) 337 60 31</a>
+</div></div>
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="logo" href="index.html"><b>Бухгалтерский успех</b><span>аутсорсинг · Минск</span></a>
+    <span class="hdr__sp"></span>
+    <div class="hdr__act">
+      <a class="hdr__tel" href="tel:+375173376031">+375 (17) 337 60 31</a>
+      <a class="btn btn--acc" href="kontakty.html#zayavka">Заказать звонок</a>
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
   </div>
-  <nav class="navbar" aria-label="Страницы сайта"><div class="wrap navbar__in"><a href="uslugi.html">Услуги</a><a href="ceny.html">Цены</a><a href="tarify.html">Пакеты</a><a href="garantii.html">Гарантии</a><a href="kak-rabotaem.html">Как работаем</a><a href="o-kompanii.html">О компании</a><a href="otzyvy.html">Отзывы</a><a href="kontakty.html">Контакты</a></div></nav>
+  <nav class="strip" aria-label="Страницы сайта"><div class="wrap strip__in"><a href="uslugi.html">Услуги</a><a href="ceny.html">Цены</a><a href="tarify.html">Пакеты</a><a href="garantii.html">Гарантии</a><a href="kak-rabotaem.html">Процесс</a><a href="o-kompanii.html">О компании</a><a href="otzyvy.html">Отзывы</a><a href="kontakty.html">Контакты</a></div></nav>
 </header>
 <main>
 <section class="hero">
   <div class="hero__bg"><img src="assets/img/hero.jpg" alt="Офис бухгалтерской компании в Минске"></div>
-  <div class="hero__in"><div class="wrap">
-    <h1>Бухгалтерия, <i>за которую</i> не платят штрафами</h1>
-    <p>Ведём учёт, сдаём отчётность, считаем зарплату и налоги. Работаем по договору с застрахованной ответственностью — штрафы по нашей вине возмещаем.</p>
+  <div class="hero__in wrap">
+    <span class="kick">бухгалтерский аутсорсинг · Минск</span>
+    <h1>Бухгалтерия, <em>за которую</em> не платят штрафами</h1>
+    <p class="hero__lead">Ведём учёт, сдаём отчётность, считаем зарплату и налоги. Работаем по договору с застрахованной ответственностью: штрафы по нашей вине возмещаем.</p>
     <div class="hero__cta">
-      <a class="btn" href="kontakty.html#zayavka">Заказать звонок</a>
+      <a class="btn" href="kontakty.html#zayavka"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>Заказать звонок</a>
       <a class="btn btn--line" href="ceny.html">Цены и пакеты</a>
     </div>
+    <div class="hero__figs">
+      <div><b>от 80</b><span>BYN · пакет в месяц</span></div>
+      <div><b>70</b><span>BYN · нормо-час</span></div>
+      <div><b>100 000</b><span>BYN · страховка</span></div>
+      <div><b>30 минут</b><span>ответ на заявку</span></div>
+    </div>
+  </div>
+</section>
+<div class="ribbon" aria-hidden="true"><div class="ribbon__in"><i>Ведение учёта</i><i>Отчётность</i><i>Зарплата</i><i>Восстановление учёта</i><i>1С</i><i>Оптимизация налогов</i><i>Персонифицированный учёт</i><i>Годовой баланс</i><i>Документы для банка</i><i>Консультации</i><i>Ведение учёта</i><i>Отчётность</i><i>Зарплата</i><i>Восстановление учёта</i><i>1С</i><i>Оптимизация налогов</i><i>Персонифицированный учёт</i><i>Годовой баланс</i><i>Документы для банка</i><i>Консультации</i></div></div>
+<section class="band">
+  <div class="wrap">
+    <div class="spread">
+      <div class="spread__side"><span class="kick">01 · услуги</span>
+        <p class="note">Каждое направление можно взять отдельно или в пакете.</p></div>
+      <div class="spread__main">
+        <div class="spread__head">
+          <h2>Двенадцать направлений и одно обязательство</h2>
+          <p>От постановки учёта с нуля до годового баланса и документов для банка. Всё, что нужно компании или ИП в Беларуси.</p>
+        </div>
+        <div class="slist"><div class="slist__i rv"><span class="mono">01</span><b>Восстановление учёта</b><span>Сверяем расчёты с ИМНС и фондами, поднимаем первичку за прошлые периоды, восстанавливаем регистры и сдаём пропущенное.</span><i>Если учёт запущен</i></div><div class="slist__i rv"><span class="mono">02</span><b>Постановка учёта</b><span>Строим учёт с нуля под вашу систему налогообложения: план счетов, учётная политика, документооборот, сроки сдачи.</span><i>С нуля</i></div><div class="slist__i rv"><span class="mono">03</span><b>Полное ведение учёта</b><span>Бухгалтерский и налоговый учёт, первичка, сверки с поставщиками, расчёт налогов, подготовка и сдача отчётности.</span><i>Каждый месяц</i></div><div class="slist__i rv"><span class="mono">04</span><b>Составление отчётности</b><span>Декларации в ИМНС, отчёты в статистику, Белгосстрах, ФСЗН. Проверяем контрольные соотношения до отправки.</span><i>Разово</i></div><div class="slist__i rv"><span class="mono">05</span><b>Консультирование</b><span>Разбор ситуации по телефону или в офисе: как учесть операцию, какую систему выбрать, что будет при проверке.</span><i>От 60 BYN</i></div><div class="slist__i rv"><span class="mono">06</span><b>Подготовка документов</b><span>Товарные накладные, кассовые документы, товарные отчёты, акты, счета — по вашим операциям и в срок.</span><i>Первичка</i></div><div class="slist__i rv"><span class="mono">07</span><b>Доступ к программе 1С</b><span>Работаем в вашей базе или даём доступ к своей: документы и отчёты видны в любой момент.</span><i>Прозрачность</i></div><div class="slist__i rv"><span class="mono">08</span><b>Документы для кредитов</b><span>Готовим пакет для банка: отчётность, расшифровки, справки, подтверждение оборотов.</span><i>Для банка</i></div><div class="slist__i rv"><span class="mono">09</span><b>Налоговая оптимизация</b><span>Смотрим структуру операций и подбираем законные варианты снижения нагрузки: режим, договоры, распределение расходов.</span><i>От 80 BYN</i></div><div class="slist__i rv"><span class="mono">10</span><b>Учёт оплаты труда</b><span>Расчёт зарплаты, отпускных, больничных, удержаний и взносов. Кадровые документы.</span><i>Зарплата</i></div><div class="slist__i rv"><span class="mono">11</span><b>Персонифицированный учёт</b><span>Формы ПУ-1, ПУ-2, ПУ-3, отчётность ИП за себя — с расчётом и без, в срок.</span><i>ФСЗН</i></div><div class="slist__i rv"><span class="mono">12</span><b>Годовая отчётность</b><span>Годовой баланс, отчёты о прибылях и убытках, приложения. Собираем всё до дедлайна.</span><i>350 BYN</i></div></div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:28px">
+          <a class="btn btn--line" href="uslugi.html">Подробно об услугах</a>
+          <a class="btn btn--line" href="kak-rabotaem.html">Как проходит работа</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="hero__facts">
-  <div><b>от 80 BYN</b>пакет услуг в месяц</div>
-  <div><b>70 BYN</b>стоимость нормо-часа</div>
-  <div><b>100 000 BYN</b>страховка ответственности</div>
-  <div><b>30 минут</b>ответ на заявку</div>
-</div>
+<div class="plate">
+  <img src="assets/img/docs.jpg" alt="Первичные документы, расчёты и печати на столе">
+  <div class="plate__cap"><div class="wrap">
+    <p>Первичка, расчёты, отчётность: документы подшиты по месяцам</p>
+    <span>архив клиента · 2026</span>
   </div></div>
-</section>
-
-<div class="wrap" style="padding-block:20px;border-bottom:1px solid var(--line2)">
-  <div style="display:flex;flex-wrap:wrap;gap:10px 32px;align-items:baseline">
-    <span class="mono">Бухгалтерский аутсорсинг · Минск</span>
-    <span class="mono">УСН и ОСН</span>
-    <span class="mono">ВЭД</span>
-    <span class="mono">Зарплата и кадры</span>
-    <span class="mono">1С</span>
-    <span class="mono">Восстановление учёта</span>
-  </div>
 </div>
-<section class="sec">
-  <div class="wrap">
-    <div class="head">
-      <div><span class="num">01 · Услуги</span><h2>Двенадцать направлений и одно обязательство</h2></div>
-      <p>От постановки учёта с нуля до годового баланса и документов для банка. Всё, что нужно компании или ИП в Беларуси.</p>
-    </div>
-    <div class="grid g3"><div class="cell"><span class="n">01</span><h3>Восстановление учёта</h3><p>Сверяем расчёты с ИМНС и фондами, поднимаем первичку за прошлые периоды, восстанавливаем регистры и сдаём пропущенное.</p><p style="margin-top:10px;font-size:.84rem;color:#83878E">Если учёт запущен или бухгалтер ушёл, не передав дела.</p></div><div class="cell"><span class="n">02</span><h3>Постановка учёта</h3><p>Строим учёт с нуля под вашу систему налогообложения: план счетов, учётная политика, документооборот, сроки сдачи.</p><p style="margin-top:10px;font-size:.84rem;color:#83878E">Новая компания или переход на нормальный учёт.</p></div><div class="cell"><span class="n">03</span><h3>Полное ведение учёта</h3><p>Бухгалтерский и налоговый учёт, первичка, сверки с поставщиками, расчёт налогов, подготовка и сдача отчётности.</p><p style="margin-top:10px;font-size:.84rem;color:#83878E">Внешний главный бухгалтер без найма в штат.</p></div><div class="cell"><span class="n">04</span><h3>Составление отчётности</h3><p>Декларации в ИМНС, отчёты в статистику, Белгосстрах, ФСЗН. Проверяем контрольные соотношения до отправки.</p><p style="margin-top:10px;font-size:.84rem;color:#83878E">Разовые отчёты и «нулевые» периоды.</p></div><div class="cell"><span class="n">05</span><h3>Консультирование</h3><p>Разбор ситуации по телефону или в офисе: как учесть операцию, какую систему выбрать, что будет при проверке.</p><p style="margin-top:10px;font-size:.84rem;color:#83878E">Когда решение нужно быстро и по нормам РБ.</p></div><div class="cell"><span class="n">06</span><h3>Подготовка документов</h3><p>Товарные накладные, кассовые документы, товарные отчёты, акты, счета — по вашим операциям и в срок.</p><p style="margin-top:10px;font-size:.84rem;color:#83878E">Если документы ведёт менеджер, а не бухгалтер.</p></div><div class="cell"><span class="n">07</span><h3>Доступ к программе 1С</h3><p>Работаем в вашей базе или даём доступ к своей: документы и отчёты видны в любой момент.</p><p style="margin-top:10px;font-size:.84rem;color:#83878E">Прозрачность вместо «пришлите выгрузку».</p></div><div class="cell"><span class="n">08</span><h3>Документы для кредитов</h3><p>Готовим пакет для банка: отчётность, расшифровки, справки, подтверждение оборотов.</p><p style="margin-top:10px;font-size:.84rem;color:#83878E">Кредит, лизинг, тендер, проверка контрагента.</p></div><div class="cell"><span class="n">09</span><h3>Налоговая оптимизация</h3><p>Смотрим структуру операций и подбираем законные варианты снижения нагрузки: режим, договоры, распределение расходов.</p><p style="margin-top:10px;font-size:.84rem;color:#83878E">Когда налоги растут быстрее выручки.</p></div><div class="cell"><span class="n">10</span><h3>Учёт оплаты труда</h3><p>Расчёт зарплаты, отпускных, больничных, удержаний и взносов. Кадровые документы.</p><p style="margin-top:10px;font-size:.84rem;color:#83878E">От одного сотрудника до нескольких десятков.</p></div><div class="cell"><span class="n">11</span><h3>Персонифицированный учёт</h3><p>Формы ПУ-1, ПУ-2, ПУ-3, отчётность ИП за себя — с расчётом и без, в срок.</p><p style="margin-top:10px;font-size:.84rem;color:#83878E">ФСЗН принимает только корректные формы.</p></div><div class="cell"><span class="n">12</span><h3>Годовая отчётность</h3><p>Годовой баланс, отчёты о прибылях и убытках, приложения. Собираем всё до дедлайна.</p><p style="margin-top:10px;font-size:.84rem;color:#83878E">Закрытие года без аврала в марте.</p></div></div>
-    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:26px">
-      <a class="btn btn--line" href="uslugi.html">Все услуги подробно</a>
-      <a class="btn btn--line" href="kak-rabotaem.html">Как проходит работа</a>
-    </div>
-  </div>
-</section>
 
-<section class="sec sec--alt">
+<section class="band band--alt">
   <div class="wrap">
-    <div class="head">
-      <div><span class="num">02 · Цена</span><h2>Стоимость по нормо-часам, без «уточним потом»</h2></div>
-      <p>Цена нормо-часа — 70 BYN. Согласовали количество часов в месяц — получили сумму, которая не меняется, пока не меняется объём документов.</p>
-    </div>
-
-<div class="formula">
-  <b>N</b><span>нормо-часов<small>в месяц</small></span>
-  <b>×</b><span>70 BYN<small>стоимость часа</small></span>
-  <b>=</b><span>сумма<small>в договоре</small></span>
+    <div class="spread">
+      <div class="spread__side"><span class="kick">02 · цена</span>
+        <p class="note">Цены с прайса компании, без «уточним потом».</p></div>
+      <div class="spread__main">
+        <div class="spread__head">
+          <h2>Стоимость считается по нормо-часам</h2>
+          <p>Цена нормо-часа — 70 BYN. Согласовали количество часов в месяц — получили сумму, которая не меняется, пока не меняется объём документов.</p>
+        </div>
+        
+<div class="formula rv">
+  <div><b>N</b><span>нормо-часов в месяц</span></div>
+  <i>×</i>
+  <div><b>70</b><span>BYN за час</span></div>
+  <i>=</i>
+  <div><b>N×70</b><span>сумма в договоре</span></div>
 </div>
-    <div style="margin-top:26px"><div class="slider" id="calc">
-  <div class="slider__top">
-    <div><span class="mono">Нормо-часов в месяц</span><div class="slider__val"><span id="calc-hours">4</span><small>ч</small></div></div>
-    <div><span class="mono">Стоимость в месяц</span><div class="slider__val"><span id="calc-sum">280</span><small>BYN</small></div></div>
+        <div style="margin-top:30px"><div class="calc rv" id="calc">
+  <div class="calc__top">
+    <div><span class="kick">нормо-часов в месяц</span><div class="calc__val"><span id="calc-hours">4</span><small>ч</small></div></div>
+    <div style="text-align:right"><span class="kick">стоимость</span><div class="calc__val"><span id="calc-sum">280</span><small>BYN</small></div></div>
   </div>
   <input type="range" id="calc-range" min="1" max="12" step="1" value="4" aria-label="Количество нормо-часов в месяц">
-  <p class="slider__hint" id="calc-hint"></p>
-  <div class="grid g3"><div class="pack" data-pack="80" data-name="Начальный"><b>Начальный</b><span>80 BYN / месяц</span><small>пакет услуг</small></div><div class="pack" data-pack="200" data-name="Активный"><b>Активный</b><span>200 BYN / месяц</span><small>пакет услуг</small></div><div class="pack" data-pack="320" data-name="Рациональный"><b>Рациональный</b><span>320 BYN / месяц</span><small>пакет услуг</small></div><div class="pack" data-pack="440" data-name="Оптимальный"><b>Оптимальный</b><span>440 BYN / месяц</span><small>пакет услуг</small></div><div class="pack" data-pack="560" data-name="Деловой"><b>Деловой</b><span>560 BYN / месяц</span><small>пакет услуг</small></div><div class="pack" data-pack="680" data-name="Успешный"><b>Успешный</b><span>680 BYN / месяц</span><small>пакет услуг</small></div></div>
-  <p class="form__note">Расчёт по действующей цене нормо-часа — 70 BYN. Итоговую сумму фиксируем в договоре после того, как посмотрим объём документов и операций.</p>
+  <p class="calc__hint" id="calc-hint"></p>
+  <div class="calc__grid"><div class="calc__p" data-pack="80" data-name="Начальный"><b>Начальный</b><span>80 BYN</span></div><div class="calc__p" data-pack="200" data-name="Активный"><b>Активный</b><span>200 BYN</span></div><div class="calc__p" data-pack="320" data-name="Рациональный"><b>Рациональный</b><span>320 BYN</span></div><div class="calc__p" data-pack="440" data-name="Оптимальный"><b>Оптимальный</b><span>440 BYN</span></div><div class="calc__p" data-pack="560" data-name="Деловой"><b>Деловой</b><span>560 BYN</span></div><div class="calc__p" data-pack="680" data-name="Успешный"><b>Успешный</b><span>680 BYN</span></div></div>
+  <p class="note">Расчёт по действующей цене нормо-часа — 70 BYN. Итоговую сумму фиксируем в договоре после того, как посмотрим объём документов и операций.</p>
 </div></div>
-  </div>
-</section>
-
-<section class="sec">
-  <div class="wrap">
-    <div class="head">
-      <div><span class="num">03 · Пакеты</span><h2>Шесть пакетов: от 80 до 680 BYN в месяц</h2></div>
-      <p>Пакет — фиксированная цена за понятный объём. Если объём выходит за рамки, переходим на соседний пакет или считаем по часам.</p>
-    </div>
-    <div class="grid g3"><div class="cell"><span class="n">пакет 01</span><h3>Начальный</h3><p style="font-family:var(--f-m);font-size:1.45rem;color:var(--green);margin:6px 0 10px">80 BYN<small style="font-size:.6rem;letter-spacing:.1em;color:#83878E"> / месяц</small></p><p>Минимальный набор: первичка, книга учёта, простые отчёты. Для ИП и небольших компаний на УСН.</p></div><div class="cell"><span class="n">пакет 02</span><h3>Активный</h3><p style="font-family:var(--f-m);font-size:1.45rem;color:var(--green);margin:6px 0 10px">200 BYN<small style="font-size:.6rem;letter-spacing:.1em;color:#83878E"> / месяц</small></p><p>Ведение учёта и отчётность с небольшим числом операций, зарплата до нескольких сотрудников.</p></div><div class="cell"><span class="n">пакет 03</span><h3>Рациональный</h3><p style="font-family:var(--f-m);font-size:1.45rem;color:var(--green);margin:6px 0 10px">320 BYN<small style="font-size:.6rem;letter-spacing:.1em;color:#83878E"> / месяц</small></p><p>Расширенный учёт: больше документов, сверки, отчёты в фонды, кадровые документы.</p></div><div class="cell"><span class="n">пакет 04</span><h3>Оптимальный</h3><p style="font-family:var(--f-m);font-size:1.45rem;color:var(--green);margin:6px 0 10px">440 BYN<small style="font-size:.6rem;letter-spacing:.1em;color:#83878E"> / месяц</small></p><p>Комплексное обслуживание: учёт, налоги, зарплата, отчётность и консультации по текущим вопросам.</p></div><div class="cell"><span class="n">пакет 05</span><h3>Деловой</h3><p style="font-family:var(--f-m);font-size:1.45rem;color:var(--green);margin:6px 0 10px">560 BYN<small style="font-size:.6rem;letter-spacing:.1em;color:#83878E"> / месяц</small></p><p>Полный пакет для компании с несколькими направлениями и постоянным потоком документов.</p></div><div class="cell"><span class="n">пакет 06</span><h3>Успешный</h3><p style="font-family:var(--f-m);font-size:1.45rem;color:var(--green);margin:6px 0 10px">680 BYN<small style="font-size:.6rem;letter-spacing:.1em;color:#83878E"> / месяц</small></p><p>Максимальный объём: ВЭД, несколько систем налогообложения, сопровождение проверок и планирование.</p></div></div>
-  </div>
-</section>
-
-<section class="sec sec--alt">
-  <div class="wrap">
-    <div class="head">
-      <div><span class="num">04 · Гарантии</span><h2>Ответственность не на словах</h2></div>
-      <p>Условия прописаны в договоре. Есть внутренний контроль качества и полис страхования профессиональной ответственности.</p>
-    </div>
-    <div class="grid g3"><div class="cell"><span class="n">01</span><h3>Штат не нужен</h3><p>Не платите зарплату, налоги и отпускные бухгалтеру, не оборудуете рабочее место. Бухгалтерия — услуга с фиксированной ценой.</p></div><div class="cell"><span class="n">02</span><h3>Ответственность в договоре</h3><p>Условия, сроки и ответственность прописаны. Штрафы, возникшие по нашей вине, возмещаем.</p></div><div class="cell"><span class="n">03</span><h3>Страховка 100 000 BYN</h3><p>Есть полис страхования профессиональной ответственности: сумма покрытия указана в договоре.</p></div><div class="cell"><span class="n">04</span><h3>Специалисты из главных бухгалтеров</h3><p>Наши сотрудники в прошлом — главные бухгалтера предприятий разных сфер.</p></div><div class="cell"><span class="n">05</span><h3>Внутренний контроль</h3><p>Отчётность проверяется по контрольным соотношениям и вторым специалистом до отправки.</p></div><div class="cell"><span class="n">06</span><h3>Прозрачность</h3><p>Доступ к 1С и документам в любой момент: вы видите, что происходит с учётом.</p></div></div>
-    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:26px">
-      <a class="btn" href="garantii.html">Что мы гарантируем</a>
-      <a class="btn btn--line" href="otzyvy.html">Отзывы клиентов</a>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="sec">
+<section class="band">
   <div class="wrap">
-    <div class="head">
-      <div><span class="num">05 · Самопроверка</span><h2>Шесть вопросов о состоянии учёта</h2></div>
-      <p>Отметьте, что сейчас не выполняется. Это не аудит, но по результату уже понятно, нужна консультация или восстановление учёта.</p>
+    <div class="spread">
+      <div class="spread__side"><span class="kick">03 · пакеты</span>
+        <p class="note">Фиксированная цена за понятный объём.</p></div>
+      <div class="spread__main">
+        <div class="spread__head">
+          <h2>Шесть пакетов: от 80 до 680 BYN</h2>
+          <p>Если объём выходит за рамки пакета, переходим на соседний или считаем по часам. Пакет — не «всё включено», а описанный набор работ.</p>
+        </div>
+        <div class="packs"><div class="rv"><span class="packs__n">пакет 01</span><b class="packs__t">Начальный</b><div class="packs__p">80<small>BYN в месяц</small></div><p class="packs__d">Минимальный набор: первичка, книга учёта, простые отчёты. Для ИП и небольших компаний на УСН.</p></div><div class="rv"><span class="packs__n">пакет 02</span><b class="packs__t">Активный</b><div class="packs__p">200<small>BYN в месяц</small></div><p class="packs__d">Ведение учёта и отчётность с небольшим числом операций, зарплата до нескольких сотрудников.</p></div><div class="rv"><span class="packs__n">пакет 03</span><b class="packs__t">Рациональный</b><div class="packs__p">320<small>BYN в месяц</small></div><p class="packs__d">Расширенный учёт: больше документов, сверки, отчёты в фонды, кадровые документы.</p></div><div class="rv"><span class="packs__n">пакет 04</span><b class="packs__t">Оптимальный</b><div class="packs__p">440<small>BYN в месяц</small></div><p class="packs__d">Комплексное обслуживание: учёт, налоги, зарплата, отчётность и консультации по текущим вопросам.</p></div><div class="rv"><span class="packs__n">пакет 05</span><b class="packs__t">Деловой</b><div class="packs__p">560<small>BYN в месяц</small></div><p class="packs__d">Полный пакет для компании с несколькими направлениями и постоянным потоком документов.</p></div><div class="rv"><span class="packs__n">пакет 06</span><b class="packs__t">Успешный</b><div class="packs__p">680<small>BYN в месяц</small></div><p class="packs__d">Максимальный объём: ВЭД, несколько систем налогообложения, сопровождение проверок и планирование.</p></div></div>
+      </div>
     </div>
-<div class="frame" id="chk" style="align-items:start">
-  <div class="check"><label><input type="checkbox"> <span>Отчётность за последний период сдана вовремя и без уточнений от ИМНС</span></label><label><input type="checkbox"> <span>Сверка расчётов с бюджетом и фондами проводилась в этом квартале</span></label><label><input type="checkbox"> <span>Первичные документы собраны и подшиты по месяцам</span></label><label><input type="checkbox"> <span>Зарплата и налоги считаются по актуальным ставкам и льготам</span></label><label><input type="checkbox"> <span>Есть календарь отчётности: какие отчёты и в какие сроки</span></label><label><input type="checkbox"> <span>Понятно, кто отвечает, если срок сорвётся</span></label></div>
-  <div class="checkout">
-    <span class="mono" style="color:rgba(255,255,255,.5)">Отмечено проблем</span>
-    <b id="chk-score">0 / 6</b>
-    <h3 id="chk-title" style="font-size:1.35rem;color:#fff;text-transform:none;letter-spacing:-.01em">Учёт в порядке</h3>
-    <p id="chk-text"></p>
-    <a class="btn" id="chk-cta" href="kontakty.html#zayavka" style="margin-top:8px">Обсудить сопровождение</a>
-    <p class="form__note" style="color:rgba(255,255,255,.5)">Отмечайте пункты, которые сейчас не выполняются. Это самопроверка, а не аудит.</p>
+  </div>
+</section>
+
+<section class="band band--ink">
+  <div class="wrap">
+    <div class="spread">
+      <div class="spread__side"><span class="kick">04 · гарантии</span></div>
+      <div class="spread__main">
+        <div class="claim">
+          <div>
+            <span class="claim__num">100 000<small>BYN · сумма страхового покрытия</small></span>
+            <svg class="stamp" viewBox="0 0 200 200" role="img" aria-label="Печать: без штрафов">
+  <circle cx="100" cy="100" r="94" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="100" cy="100" r="74" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path id="stTop" d="M100 100 m-64 0 a64 64 0 0 1 128 0" fill="none"/>
+  <path id="stBot" d="M100 100 m-64 0 a64 64 0 0 0 128 0" fill="none"/>
+  <text><textPath href="#stTop" startOffset="50%" text-anchor="middle">бухгалтерский успех</textPath></text>
+  <text><textPath href="#stBot" startOffset="50%" text-anchor="middle">без штрафных санкций</textPath></text>
+  <text x="100" y="94" text-anchor="middle" style="font-family:var(--f-d);font-size:26px;letter-spacing:0;fill:currentColor">нет</text>
+  <text x="100" y="122" text-anchor="middle" style="font-family:var(--f-d);font-size:26px;letter-spacing:0;fill:currentColor">штрафам</text>
+</svg>
+          </div>
+          <div>
+            <h2 style="font-size:clamp(1.7rem,3.4vw,2.7rem)">Работа без штрафных санкций — <em>в договоре</em></h2>
+            <ul style="margin-top:24px">
+              <li><svg viewBox="0 0 24 24"><path d="M4 13l5 5L20 6"/></svg><span>Штрафы, возникшие по нашей вине, возмещаем.</span></li>
+              <li><svg viewBox="0 0 24 24"><path d="M4 13l5 5L20 6"/></svg><span>Полис страхования профессиональной ответственности.</span></li>
+              <li><svg viewBox="0 0 24 24"><path d="M4 13l5 5L20 6"/></svg><span>Внутренний контроль: отчёт проверяет второй специалист.</span></li>
+              <li><svg viewBox="0 0 24 24"><path d="M4 13l5 5L20 6"/></svg><span>Условия, сроки и ответственность прописаны в договоре.</span></li>
+            </ul>
+            <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:26px">
+              <a class="btn btn--acc" href="garantii.html">Что мы гарантируем</a>
+              <a class="btn btn--line" style="color:#F5F2E9;border-color:rgba(245,242,233,.45)" href="otzyvy.html">Отзывы</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="spread">
+      <div class="spread__side"><span class="kick">05 · самопроверка</span>
+        <p class="note">Шесть пунктов, которые чаще всего проваливаются.</p></div>
+      <div class="spread__main">
+        <div class="spread__head">
+          <h2>Шесть вопросов о состоянии учёта</h2>
+          <p>Отметьте, что сейчас не выполняется. Результат подскажет, достаточно консультации или нужна работа с документами.</p>
+        </div>
+        <div class="chk rv" id="chk">
+  <div class="chk__list"><label><input type="checkbox"> <span>Отчётность за последний период сдана вовремя и без уточнений от ИМНС</span></label><label><input type="checkbox"> <span>Сверка расчётов с бюджетом и фондами проводилась в этом квартале</span></label><label><input type="checkbox"> <span>Первичные документы собраны и подшиты по месяцам</span></label><label><input type="checkbox"> <span>Зарплата и налоги считаются по актуальным ставкам и льготам</span></label><label><input type="checkbox"> <span>Есть календарь отчётности: какие отчёты и в какие сроки</span></label><label><input type="checkbox"> <span>Понятно, кто отвечает, если срок сорвётся</span></label></div>
+  <div class="chk__out">
+    <span class="kick">отмечено проблем</span>
+    <div class="chk__score" id="chk-score">0 / 6</div>
+    <div class="chk__title" id="chk-title">Учёт в порядке</div>
+    <p class="chk__text" id="chk-text"></p>
+    <a class="btn btn--acc" id="chk-cta" href="kontakty.html#zayavka">Обсудить сопровождение</a>
+    <p class="note" style="color:rgba(242,238,228,.5)">Это самопроверка, а не аудит. Отмечайте пункты, которые сейчас не выполняются.</p>
   </div>
 </div>
-  </div>
-</section>
-
-<section class="sec sec--alt">
-  <div class="wrap">
-    <div class="head">
-      <div><span class="num">06 · Отзывы</span><h2>Клиенты — о сэкономленных нервах</h2></div>
-      <p>Полные отзывы директоров и главных редакторов — на отдельной странице.</p>
+      </div>
     </div>
-    <div class="grid g2"><figure class="quote" style="margin:0"><p><q>Учреждение «Редакция журнала «Новая экономика» — давний клиент ООО «Бухгалтерский успех». За несколько лет мы много сэкономили. Была у нас полноценная бухгалтерия, был главный бухгалтер, были связанные с этим вопросы. После подписания договора о многих вопросах мы просто забыли.</q></p><b>Сергей Шиптенко</b><small>директор — главный редактор «Новая экономика»</small></figure><figure class="quote" style="margin:0"><p><q>После заключения договора мы можем с уверенностью сказать, что бухгалтерия у нас в порядке. Теперь не нужно отслеживать действия по составлению и сдаче отчётности, можно сосредоточиться на других вопросах. Всегда можно позвонить и оперативно получить информацию.</q></p><b>Куницкая М. Т.</b><small>директор частного предприятия</small></figure><figure class="quote" style="margin:0"><p><q>Решение доверить бухгалтерию аутсорсинговой компании пришло не сразу: раньше было немыслимо отдать такие данные на сторону. В результате мы остались довольны. Теперь не нужно думать, вовремя ли получим данные учёта и не будет ли ошибок в отчёте.</q></p><b>Семёнов Б. В.</b><small>директор компании</small></figure><figure class="quote" style="margin:0"><p><q>Долго не могли найти главного бухгалтера, который вёл бы учёт на нужном уровне: компания небольшая, но работает в разных направлениях. Теперь получаем услуги вовремя, и специалисты постоянно подтверждают компетентность.</q></p><b>Коваленко П. Н.</b><small>директор IT-компании</small></figure><figure class="quote" style="margin:0"><p><q>Специалист помог в кратчайшее время навести порядок в документах и подготовить их для проверки, проанализировал ситуацию и дал рекомендации по спорным вопросам. В итоге мы справились быстрее, чем если бы делали всё сами.</q></p><b>Сергей Павлович</b><small>директор компании</small></figure></div>
   </div>
 </section>
 
-<section class="sec">
+<section class="band band--alt">
   <div class="wrap">
-    <div class="head">
-      <div><span class="num">07 · Вопросы</span><h2>Спрашивают до договора</h2></div>
-      <p>Если ответа нет — позвоните, объясним по вашей ситуации.</p>
+    <div class="spread">
+      <div class="spread__side"><span class="kick">06 · отзывы</span></div>
+      <div class="spread__main">
+        <div class="spread__head">
+          <h2>Клиенты — о сэкономленных нервах</h2>
+          <p>Полные отзывы директоров и главных редакторов — на отдельной странице.</p>
+        </div>
+        <div class="quotes"><figure class="quote rv"><p><q>Учреждение «Редакция журнала «Новая экономика» — давний клиент ООО «Бухгалтерский успех». За несколько лет мы много сэкономили. Была у нас полноценная бухгалтерия, был главный бухгалтер, были связанные с этим вопросы. После подписания договора о многих вопросах мы просто забыли.</q></p><div><b>Сергей Шиптенко</b><br><small>директор — главный редактор «Новая экономика»</small></div></figure><figure class="quote rv"><p><q>После заключения договора мы можем с уверенностью сказать, что бухгалтерия у нас в порядке. Теперь не нужно отслеживать действия по составлению и сдаче отчётности, можно сосредоточиться на других вопросах. Всегда можно позвонить и оперативно получить информацию.</q></p><div><b>Куницкая М. Т.</b><br><small>директор частного предприятия</small></div></figure><figure class="quote rv"><p><q>Решение доверить бухгалтерию аутсорсинговой компании пришло не сразу: раньше было немыслимо отдать такие данные на сторону. В результате мы остались довольны. Теперь не нужно думать, вовремя ли получим данные учёта и не будет ли ошибок в отчёте.</q></p><div><b>Семёнов Б. В.</b><br><small>директор компании</small></div></figure></div>
+        <div style="margin-top:28px"><a class="btn btn--line" href="otzyvy.html">Все отзывы</a></div>
+      </div>
     </div>
-<div class="acc"><div class="acc__i is-open"><button class="acc__q" aria-expanded="true">Что входит в обслуживание?</button><div class="acc__a">Ведение бухгалтерского и налогового учёта, первичка, расчёт зарплаты и налогов, подготовка и сдача всей отчётности. Перечень фиксируется в договоре: он зависит от системы налогообложения и объёма операций.</div></div><div class="acc__i"><button class="acc__q" aria-expanded="false">Как считается стоимость?</button><div class="acc__a">Так: пакет услуг по фиксированной цене (от 80 BYN в месяц) или расчёт по нормо-часам — 70 BYN за час. Согласованное количество часов умножается на стоимость часа; при неизменном объёме документов сумма не меняется.</div></div><div class="acc__i"><button class="acc__q" aria-expanded="false">Кто отвечает, если в отчёте ошибка?</button><div class="acc__a">По договору ответственность несёт компания. Есть внутренний контроль качества и полис страхования профессиональной ответственности на 100 000 BYN. Штрафы, возникшие по нашей вине, возмещаем.</div></div><div class="acc__i"><button class="acc__q" aria-expanded="false">Работаете ли вы в 1С?</button><div class="acc__a">Да. Можем работать в вашей базе или дать доступ к своей: вы видите документы и отчёты в любой момент, а не «по запросу раз в квартал».</div></div><div class="acc__i"><button class="acc__q" aria-expanded="false">Что нужно, чтобы начать?</button><div class="acc__a">Звонок или заявка, короткий разговор о вашей ситуации, договор. Если учёт запущен, сначала проводим диагностику документов и говорим, что придётся восстанавливать.</div></div><div class="acc__i"><button class="acc__q" aria-expanded="false">Можно ли взять только отчётность?</button><div class="acc__a">Да. Разовые отчёты есть в прайсе: декларация в ИМНС, отчёты в статистику, Белгосстрах, ФСЗН 4-фонд, персонифицированный учёт.</div></div><div class="acc__i"><button class="acc__q" aria-expanded="false">Как быстро отвечаете?</button><div class="acc__a">В рабочее время — в течение 30 минут после заявки. Дальше общение идёт с закреплённым специалистом, который ведёт вашу компанию.</div></div></div>
   </div>
 </section>
 
-<section class="sec sec--dark"><div class="wrap">
-  <div class="cta" style="background:transparent;padding:0">
+<section class="band">
+  <div class="wrap">
+    <div class="spread">
+      <div class="spread__side"><span class="kick">07 · вопросы</span></div>
+      <div class="spread__main">
+        <div class="spread__head">
+          <h2>Спрашивают до договора</h2>
+          <p>Если ответа нет — позвоните, объясним по вашей ситуации.</p>
+        </div>
+        <div class="faq"><div class="faq__i is-open"><button class="faq__q" aria-expanded="true">Что входит в обслуживание?</button><div class="faq__a">Ведение бухгалтерского и налогового учёта, первичка, расчёт зарплаты и налогов, подготовка и сдача всей отчётности. Перечень фиксируется в договоре: он зависит от системы налогообложения и объёма операций.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false">Как считается стоимость?</button><div class="faq__a">Два способа: пакет услуг по фиксированной цене (от 80 BYN в месяц) или расчёт по нормо-часам — 70 BYN за час. Согласованное количество часов умножается на стоимость часа; при неизменном объёме документов сумма не меняется.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false">Кто отвечает, если в отчёте ошибка?</button><div class="faq__a">По договору ответственность несёт компания. Есть внутренний контроль качества и полис страхования профессиональной ответственности на 100 000 BYN. Штрафы, возникшие по нашей вине, возмещаем.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false">Работаете ли вы в 1С?</button><div class="faq__a">Да. Можем работать в вашей базе или дать доступ к своей: вы видите документы и отчёты в любой момент, а не «по запросу раз в квартал».</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false">Что нужно, чтобы начать?</button><div class="faq__a">Звонок или заявка, короткий разговор о вашей ситуации, договор. Если учёт запущен, сначала проводим диагностику документов и говорим, что придётся восстанавливать.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false">Можно ли взять только отчётность?</button><div class="faq__a">Да. Разовые отчёты есть в прайсе: декларация в ИМНС, отчёты в статистику, Белгосстрах, ФСЗН 4-фонд, персонифицированный учёт.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false">Как быстро отвечаете?</button><div class="faq__a">В рабочее время — в течение 30 минут после заявки. Дальше общение идёт с закреплённым специалистом, который ведёт вашу компанию.</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band band--ink"><div class="wrap">
+  <div class="cta">
     <div>
-      <h2>Посчитаем вашу бухгалтерию за один разговор</h2>
-      <p>Скажите систему налогообложения, число документов и сотрудников — назовём стоимость и сроки. Консультация бесплатная.</p>
+      <span class="kick">следующий шаг</span>
+      <h2 style="margin-top:16px">Посчитаем вашу бухгалтерию <em>за один разговор</em></h2>
+      <p style="margin-top:16px;max-width:46ch">Скажите систему налогообложения, число документов и сотрудников — назовём стоимость и сроки. Консультация бесплатная.</p>
     </div>
-    <div style="display:flex;flex-wrap:wrap;gap:12px">
-      <a class="btn" href="tel:+375173376031">Позвонить</a>
-      <a class="btn btn--line" href="kontakty.html#zayavka">Заказать звонок</a>
+    <div class="cta__act">
+      <a class="btn btn--acc" href="tel:+375173376031">Позвонить +375 (17) 337 60 31</a>
+      <a class="btn btn--line" style="color:#F5F2E9;border-color:rgba(245,242,233,.45)" href="kontakty.html#zayavka">Заказать звонок</a>
     </div>
   </div>
 </div></section></main>
+<div class="grain" aria-hidden="true"></div>
 <footer>
   <div class="wrap">
-    <div class="fgrid">
+    <div class="foot__grid">
       <div>
         <b>ООО «Бухгалтерский успех»</b>
-        <p style="margin:0 0 10px">Бухгалтерский аутсорсинг в Минске: полное ведение учёта, отчётность, зарплата, восстановление учёта. Страхование профессиональной ответственности на 100 000 BYN.</p>
-        <p class="mono" style="color:rgba(255,255,255,.42)">ул. Притыцкого, 83, пом. 33н, каб. 2 · Минск, 220140, Беларусь</p>
+        <p style="margin:0 0 12px;max-width:44ch">Бухгалтерский аутсорсинг в Минске: полное ведение учёта, отчётность, зарплата, восстановление учёта. Профессиональная ответственность застрахована на 100 000 BYN.</p>
+        <p class="mono" style="color:rgba(242,238,228,.42)">ул. Притыцкого, 83, пом. 33н, каб. 2 · Минск, 220140, Беларусь</p>
       </div>
       <div>
         <b>Связь</b>
@@ -243,22 +342,26 @@ font-family:var(--f-m);font-size:.62rem;letter-spacing:.06em;text-transform:uppe
         <a class="lnk" href="tel:+375293859484">+375 (29) 385 94 84</a>
         <a class="lnk" href="tel:+375293089095">+375 (29) 308 90 95</a>
         <a class="lnk" href="mailto:buhgalteru@list.ru">buhgalteru@list.ru</a>
+        <a class="lnk" href="https://wa.me/375293859484" target="_blank" rel="noopener">WhatsApp</a>
       </div>
       <div>
         <b>Страницы</b>
-        <a class="lnk" href="uslugi.html">Услуги</a><a class="lnk" href="ceny.html">Цены</a><a class="lnk" href="tarify.html">Пакеты</a><a class="lnk" href="garantii.html">Гарантии</a><a class="lnk" href="kak-rabotaem.html">Как работаем</a><a class="lnk" href="o-kompanii.html">О компании</a><a class="lnk" href="otzyvy.html">Отзывы</a><a class="lnk" href="kontakty.html">Контакты</a>
-        <a class="lnk" href="politika.html">Политика и публичный договор</a>
+        <a class="lnk" href="uslugi.html">Услуги</a><a class="lnk" href="ceny.html">Цены</a><a class="lnk" href="tarify.html">Пакеты</a><a class="lnk" href="garantii.html">Гарантии</a><a class="lnk" href="kak-rabotaem.html">Процесс</a><a class="lnk" href="o-kompanii.html">О компании</a><a class="lnk" href="otzyvy.html">Отзывы</a><a class="lnk" href="kontakty.html">Контакты</a>
+        <a class="lnk" href="politika.html">Политика и договор</a>
       </div>
     </div>
-    <div class="fbot"><span>© 2026 ООО «Бухгалтерский успех»</span><span>Информация на сайте не является публичной офертой</span></div>
+    <div class="foot__word" aria-hidden="true">Бухгалтерский успех</div>
+    <div class="foot__bot"><span>© 2026 ООО «Бухгалтерский успех»</span><span>Не является публичной офертой</span></div>
   </div>
 </footer>
 <div class="drawer" id="drawer" data-open="false">
   <div class="drawer__inner" role="dialog" aria-modal="true" aria-label="Меню сайта">
-    <div class="drawer__top"><span class="mono">Меню</span><button class="drawer__close" id="drawerClose" aria-label="Закрыть меню"></button></div>
-    <a class="dl" href="uslugi.html">Услуги</a><a class="dl" href="ceny.html">Цены</a><a class="dl" href="tarify.html">Пакеты</a><a class="dl" href="garantii.html">Гарантии</a><a class="dl" href="kak-rabotaem.html">Как работаем</a><a class="dl" href="o-kompanii.html">О компании</a><a class="dl" href="otzyvy.html">Отзывы</a><a class="dl" href="kontakty.html">Контакты</a><a class="dl" href="politika.html">Политика</a>
-    <a class="btn" href="tel:+375173376031">Позвонить +375 (17) 337 60 31</a>
+    <div class="drawer__top"><span class="mono">Меню сайта</span><button class="drawer__close" id="drawerClose" aria-label="Закрыть меню"></button></div>
+    <a class="dl" href="uslugi.html">Услуги</a><a class="dl" href="ceny.html">Цены</a><a class="dl" href="tarify.html">Пакеты</a><a class="dl" href="garantii.html">Гарантии</a><a class="dl" href="kak-rabotaem.html">Процесс</a><a class="dl" href="o-kompanii.html">О компании</a><a class="dl" href="otzyvy.html">Отзывы</a><a class="dl" href="kontakty.html">Контакты</a>
+    <a class="dl" href="politika.html">Политика</a>
+    <a class="btn btn--acc" href="tel:+375173376031">Позвонить +375 (17) 337 60 31</a>
     <a class="btn btn--line" href="kontakty.html#zayavka">Заказать звонок</a>
+    <p class="mono" style="margin-top:18px">ул. Притыцкого, 83, пом. 33н, каб. 2</p>
   </div>
 </div>
 <div class="fbar">
@@ -267,5 +370,5 @@ font-family:var(--f-m);font-size:.62rem;letter-spacing:.06em;text-transform:uppe
   <a href="viber://chat?number=%2B375293859484"><svg viewBox="0 0 24 24"><path d="M12 4c4 0 7 3 7 7a7 7 0 01-7 7c-1.6 0-3-.4-4-1.2L5 18l1-3c-.7-1-1-2.2-1-3.5C5 7 8 4 12 4z"/><path d="M10 9l2 5 2-5"/></svg>Viber</a>
   <a href="https://t.me/+375293859484" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M21 5L3 11l5 2 2 6 3-4 5 3z"/></svg>Telegram</a>
 </div>
-<script src="assets/js/main.v1.js" defer></script>
+<script src="assets/js/main.v2.js" defer></script>
 </body></html>
